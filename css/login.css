@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+body{
+    margin: 0;
+    font-family: "Dongle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.login-banner{
+    overflow: hidden;
+    padding: 0px;
+    background-image: url(/img/loginbanner.jpg);
+    height: 100vh;
+    background: url('/img/loginbanner.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.login-section{
+    padding: 80px 40px;
+}
+
+.login-text{
+    text-align: left;
+}
+
+.login-text>p{
+    margin: 0px;
+}
+
+
+.mb-3{
+    margin-bottom: 0 !important;
+}
+
+.login-comment{
+    font-size: 18px;
+    position: relative;
+    top: 24px;
+    left: 14px;
+    float: left;
+    color: #8b8b8b;
+}
+
+.login-input{
+    height: 56px;
+    padding-top: 12px;
+    font-size: 25px;
+}
+
+.login-inner{
+    position: relative;
+    top: -8px;
+}
+
+.login-input::placeholder{
+    color:#8b8b8b;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.login-input:focus{
+    color:#8b8b8b;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.login-btn{
+    background-color: #ffeb60;
+    height: 56px;
+    margin-top: 10px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.login-btn:hover{
+    background-color: #ffeb60;
+}
+
+.login-tag{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-link{
+    text-decoration: none;
+    color: #8b8b8b;
+}
+
+.login-tag>li{
+    list-style: none;
+}
+
+.login-tag>li.login-block::after{
+    content: "";
+    display: inline-block;
+    width: 1px; 
+    height: 12px; 
+    background-color: #8b8b8b; 
+    margin: 0px 10px;
+    position: relative;
+    top: 2px; 
+}
+
+.login-line{
+    display: flex;
+    align-items: center;
+    color: #a5a5a5;
+    font-size: 20px;
+    margin: 8px 0px;
+}
+
+.login-line>p{
+    margin: 0px;
+}
+
+.login-line::before{
+    content: "";
+    flex-grow: 1;
+    margin: 0px 16px;
+    background-color: #a5a5a5;
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    position: relative;
+    top: -10px;
+}
+
+.login-line::after{
+    content: "";
+    flex-grow: 1;
+    margin: 0px 16px;
+    background-color: #a5a5a5;
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    position: relative;
+    top: -10px;
+}
+
+.login-snslist{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.login-snsicon{
+    margin-left: 15px;
+}
+
+#google-icon{
+    width: 40px;
+    height: 40px;
+}
