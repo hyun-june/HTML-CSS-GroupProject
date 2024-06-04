@@ -1,0 +1,90 @@
+@import "screen-btn.css";
+
+.main-screen {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gerne-title {
+    margin-bottom: 10px;
+}
+
+.gerne-btn {
+    display:flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.gerne-btn button{
+    width: 80px;
+    height: 40px;
+    border-radius: 30px;
+    border: 0.5px solid #E9E9E9;
+    color: black;
+    background-color: white;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.gerne-btn button:focus {
+    background-color: #8E43E7;
+    color: white;
+    font-weight: 600;
+}
+
+.gerne-list img {
+    width: 240px;
+    height: 320px;
+    border-radius: 10px;
+}
+
+.gerne-total-list {
+    display:flex;
+    position: relative;
+}
+
+.gerne-list {
+    margin-right: 20px;
+    position: relative;
+}
+
+.gerne-list__content-title {
+    margin-bottom: 5px;
+    width: 200px;
+}
+
+.gerne-list__content-title span {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.gerne-list__content-time {
+    color: #A5A5A5;
+}
+
+#badge button {
+    color: #B070F0;
+    border: 0.1px solid #B070F0;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#badge2 button {
+    color: chocolate;
+    border: 0.1px solid chocolate;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.gerne-list__ranking {
+    position: absolute;
+    left: 30px;
+    bottom: 120px;
+    color: white;
+    font-size: 60px;
+    font-weight: 900;
+}
