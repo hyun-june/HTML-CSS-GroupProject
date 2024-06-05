@@ -1,5 +1,6 @@
 @import "screen-btn.css";
 @import "banner.css";
+@import "review.css";
 
 .main-screen {
     display:flex;
