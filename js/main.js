@@ -46,3 +46,5 @@ const moveNext = () => {
 
 gerneprevbtn.addEventListener("click", movePrev);
 gernenextbtn.addEventListener("click", moveNext);
+
+

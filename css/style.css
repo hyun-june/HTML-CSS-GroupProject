@@ -11,6 +11,7 @@
 
 .gerne-title {
     margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .gerne-btn {
@@ -40,7 +41,7 @@
     width: 240px;
     height: 320px;
     border-radius: 10px;
-     transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .gerne-total-list {
