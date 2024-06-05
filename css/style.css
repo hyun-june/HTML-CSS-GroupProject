@@ -1,4 +1,5 @@
 @import "screen-btn.css";
+@import "banner.css";
 
 .main-screen {
     display:flex;
