@@ -1,0 +1,44 @@
+.text_c{
+    border-radius: 24px;
+    width: 400px;
+    height: 40px;
+    padding-right: 40px;
+    
+  }
+  .search-icon{
+    position:relative;
+    right:40px;
+    top: 11px;
+  }
+  .login{
+    margin: 20px;
+    margin-left: 200px;
+  }
+  .lang_choice{
+    border: 1px solid red;
+  }
+  .under_nav a{
+    font-family: "Open Sans", sans-serif;
+    color:black;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: 300;
+  }
+  .purple a{
+    color:purple;
+    font-weight: 300;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+
+  @media screen and (max-width:48rem) {
+      .under_nav{
+        display: none;
+      }
+      .collapse navbar-collapse{
+        display: none;
+      }
+      
+
+    }
