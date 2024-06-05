@@ -1,0 +1,39 @@
+.best-review h2{
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.best__review__card{display: flex;}
+.best__review__card .card-body{text-align: left;}
+
+.best__position{display: flex;}
+
+.best__perform{color: #999;}
+.best__title{font-weight: 700; font-size: 20px;}
+.best__comment{color: #666; font-weight: 400; font-size: 15px;}
+
+.best__reviewer{display: flex; height: 24px;}
+.reviewer__img{border: 1px solid lightgray; border-radius: 50%;}
+.review__star{color: #fdba39;}
+.star-point{font-weight: 700; font-size: 15px;}
+
+.review__img{
+    width: 150px;
+    height: 100%;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .08);
+    border-radius: 8px;
+}
+
+.review-all__style{
+    background-color: white;
+    padding: 15px 30px;
+    border: 1px solid purple;
+    border-radius: 3.2rem;
+    font-weight: 700;
+    color: #000;
+}
+.review-all__style:hover{
+    border: 3px solid purple;
+}
+
+.mr-10{margin-right: 10px;}
