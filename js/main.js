@@ -47,4 +47,22 @@ const moveNext = () => {
 gerneprevbtn.addEventListener("click", movePrev);
 gernenextbtn.addEventListener("click", moveNext);
 
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+        {
+            pageLanguage: 'ko'
+          , includedLanguages: 'en,ja,ko,zh-CN'
+          , layout: google.translate.TranslateElement.InlineLayout.SIMPLE // none or HORIZONTAL, SIMPLE
+        }
+      , 'google_translate_element'
+    );
+}
 
+function openTranslateWidget() {
+    var translateElement = document.getElementById('google_translate_element');
+    if (translateElement.style.display === 'none' || translateElement.style.display === '') {
+        translateElement.style.display = 'block';
+    } else {
+        translateElement.style.display = 'none';
+    }
+}

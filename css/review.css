@@ -1,39 +1,50 @@
-.best-review h2{
-    font-weight: 700;
-    font-size: 28px;
+.best-review__box{width: 1200px;}
+.best-review__list{padding: 0 0 150px 400px;}
+.best-review__list ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-
-.best__review__card{display: flex;}
-.best__review__card .card-body{text-align: left;}
-
-.best__position{display: flex;}
-
-.best__perform{color: #999;}
-.best__title{font-weight: 700; font-size: 20px;}
-.best__comment{color: #666; font-weight: 400; font-size: 15px;}
-
-.best__reviewer{display: flex; height: 24px;}
+.best-review__list ul li:nth-child(2n){margin-top: 100px;}
+.no-dot{list-style-type: none;}
+.review__img{box-shadow: 0 0 0 2px rgba(0, 0, 0, .08);}
+.review__card__body{padding: 40px 20px;}
+.card-front__title{
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -1px;
+}
+.reviewer{display: flex;}
 .reviewer__img{border: 1px solid lightgray; border-radius: 50%;}
-.review__star{color: #fdba39;}
-.star-point{font-weight: 700; font-size: 15px;}
-
-.review__img{
-    width: 150px;
-    height: 100%;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, .08);
+.review__card{
+    display: inline-grid;
+    transition: transform 1.5s;
+    transform: perspective(3000px) rotateY(0deg);
+    transform-style: preserve-3d;
+}
+.review__card:hover{
+    transform: perspective(3000px) rotateY(180deg);
+}
+.review__card > * {
+    grid-area: 1 / 1 / 1 / 1;
+    width: 350px;
+    height: 600px;
+    padding: 12px;
     border-radius: 8px;
+    backface-visibility: hidden;
 }
-
-.review-all__style{
-    background-color: white;
-    padding: 15px 30px;
-    border: 1px solid purple;
-    border-radius: 3.2rem;
-    font-weight: 700;
-    color: #000;
-}
-.review-all__style:hover{
-    border: 3px solid purple;
-}
-
+.review__card-front{ background-color: white; border: 1px solid black;}
+.review__card-back{ background-color: white; border: 1px solid black; transform: rotateY(180deg);}
+.card-back__name{font-size: 15px; color: #999;}
+.card-back__title{font-weight: 700; font-size: 20px;}
+.reviewer__star{color: #FDBA39;}
+.reviewer__point{font-weight: 700; font-size: 15px;}
+.card-back__comment{font-size: 15px;}
 .mr-10{margin-right: 10px;}
+
+
+
+
+
+
+

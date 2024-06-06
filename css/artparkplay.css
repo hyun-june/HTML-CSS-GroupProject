@@ -1,33 +1,10 @@
-@import "screen-btn.css";
-@import "banner.css";
-@import "review.css";
-@import "header.css";
-@import "footer.css";
-@import "artparkplay.css";
-
-body{
-    
+h1{
+    text-align: center;
 }
-
-.main-screen {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.Play-btn{
+    text-align: center;
 }
-
-.gerne-title {
-    margin-bottom: 10px;
-    margin-top: 30px;
-}
-
-.gerne-btn {
-    display:flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.gerne-btn button{
+.Play-btn button{
     width: 80px;
     height: 40px;
     border-radius: 30px;
@@ -35,20 +12,13 @@ body{
     color: black;
     background-color: white;
     font-size: 15px;
-    margin-right: 10px;
+    margin-right: 20px;
+    
 }
-
-.gerne-btn button:focus {
+.Play-btn button:focus {
     background-color: #8E43E7;
     color: white;
     font-weight: 600;
-}
-
-.gerne-list img {
-    width: 240px;
-    height: 320px;
-    border-radius: 10px;
-    transition: transform 0.5s ease-in-out;
 }
 
 .gerne-total-list {
@@ -62,12 +32,14 @@ body{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     position: relative;
+    margin-top: 40px;
+    
 }
 
 .gerne-list__content-title {
     margin-bottom: 5px;
     width: 200px;
-    
+
 }
 
 .gerne-list__content-title span {
@@ -85,7 +57,7 @@ body{
     background-color: white;
     font-weight: 600;
     border-radius: 5px;
-}
+    }
 
 #badge2 button {
     color: chocolate;
@@ -107,8 +79,47 @@ body{
 .gerne-list__content{
     transition: transform 0.5s ease-in-out;
 }
+.gerne-list-btn {
+    position: absolute;
+    opacity: 0.8;
+    top: 120px;
+    z-index: 10;
+}
 
-.footer_icon{
-    width: 30px;
-    height: 30px;
+.gerne-list-btn i {
+    opacity: 1;
+}
+
+.gerne-screen-btn-right {
+    right:10px;
+}
+
+#gerne-prevbtn,#gerne-nextbtn{
+    border: none;
+    background-color: aqua;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.card-body{
+    padding: 0 0 0 1rem;
+    display: flex;
+
+    
+}
+.card{
+    border: 1px solid #e8e8e8;
+    border-radius: 0 0 1.2rem 1.2rem;
+    margin-left: 90px;
+    margin-right: 50px;
+    width: 20rem;
+    
+}
+.span_exp{
+    font-style: normal;
+    font-weight: 700;  
+    padding: 10px 10px 8px 10px;
+}
+.gerne-total-list{
+    margin-top: 40px;
 }

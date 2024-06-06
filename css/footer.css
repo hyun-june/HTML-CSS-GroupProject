@@ -1,15 +1,17 @@
-body{
+footer{
     font-size: 13px;
     margin: 25px;
     border-top: 1px solid rgb(208, 204, 204);
+    text-align: center;
   }
+
   .footer_first{
     margin: 10px;
     width: 100%;
     /*margin-bottom: 20px;*/
     padding: 10px;
-    
   }
+
   .footer_first a{
     color: black;
     text-decoration: none;
