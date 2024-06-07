@@ -1,8 +1,4 @@
-@import "detail.css";
-@import "calendar.css";
-@import "modal.css";
 @import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
-
 
 /* HEADER */
 
@@ -28,9 +24,11 @@
     font-family: "Gaegu", sans-serif;
     font-size: 50px;
     font-weight: 600;
-
   }
 
+  .navbar-brand:hover{
+    text-decoration: none;
+  }
 
   .navbar-nav{
     display: flex;
@@ -462,6 +460,7 @@ a:hover{
 
 footer{
     background-color: black;
+    padding: 10px 0px;
 }
 
 .footer_btn_1{
@@ -480,13 +479,7 @@ footer{
     margin-left: 80px;
     margin-top: 50px;
 }
-.btn {
-    width: 322px;
-    height: 58px;
-    background-color: #000000;
-    color: white;
-    border-radius: 0px;
-}
+
 .dropdown-menu {
     width: 322px;
     height: 58px;
@@ -499,8 +492,8 @@ footer{
     margin-left: 80px;
     margin-top: 20px;
     display: flex;
-
 }
+
 .footer_icon a{
     margin-top: 10px;
     margin-left: 22px;
@@ -512,8 +505,8 @@ footer{
 .footer_right{
     float: right;
     margin-left: 100px;
-
 }
+
 .p_first{
     text-align: right;
     color: #737373;
@@ -534,9 +527,22 @@ footer{
     color: #000000;
 }
 
-.form-control{
+.footer-form{
     border-radius: 0px;
 }
+
+
+.footer-btn {
+    width: 322px;
+    height: 58px;
+    color: black;
+    border-radius: 0px;
+}
+
+.footer-btn:hover{
+    background-color: #000000;
+}
+
 
 .d-flex button:hover{
     background-color: #000000;
@@ -552,7 +558,7 @@ footer{
 
 .footer-main{
     display: flex;
-    margin-top: 40px;
+    justify-content: center;
 }
 
 hr{
@@ -675,7 +681,6 @@ body.dark-mode #nav-img {
     background-color: #999999;
 }
 
-
   @media screen and (max-width:48rem) {
   .footer_first a {
     text-align: left;
@@ -732,12 +737,17 @@ body.dark-mode #nav-img {
     75% {background: url("https://dimg.donga.com/wps/NEWS/IMAGE/2016/02/03/76284252.2.jpg") no-repeat center; background-size: cover;}
     100% {background: url("https://dimg.donga.com/wps/NEWS/IMAGE/2023/03/29/118587483.2.jpg") no-repeat center; background-size: cover;}
 }
-.notice-video{position: relative; padding: 100px 0 0 600px;}
+
+.notice-video{
+    position: relative; padding: 100px 0 0 600px;
+}
+
 .image-videowrap{
     position: absolute;
     left: 0;
     top: 100px;
 }
+
 .image-videoborder{
     width: 350px;
     height: 600px;
@@ -745,6 +755,7 @@ body.dark-mode #nav-img {
     border-top-right-radius: 250px;
     overflow: hidden;
 }
+
 .image-videoplay{
     width: 100%;
     height: 100%;
@@ -754,16 +765,24 @@ body.dark-mode #nav-img {
     animation: change_image 30s ease 1.5s infinite;
 }
 
+.noticewrap ul{
+    padding: 0;
+}
 
+.noticewrap li{
+    border-bottom: 1px solid #666; height: 60px;
+}
 
-.noticewrap ul{padding: 0;}
-.noticewrap li{border-bottom: 1px solid #666; height: 60px;}
 .noticewrap li a{
     line-height: 60px;
     text-decoration: none;
     color: black;
 }
-.noticewrap li a:hover{font-weight: bold;}
+
+.noticewrap li a:hover{
+    font-weight: bold;
+}
+
 .noticetitle{
     padding: 0 0 9px 0;
     font-size: 77px;
