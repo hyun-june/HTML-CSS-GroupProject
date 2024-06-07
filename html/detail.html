@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="data:image/png;base64,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" 
+              alt="" width="196" height="38">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <form class="d-flex" role="search">
+              <input class="form-control me-1 text_c" type="search" aria-label="Search">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </form> <!--검색창-->
+  
+            <div class="collapse navbar-collapse login" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">로그인</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">회원가입</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">마이페이지</a>
+                </li>
+                <li>
+                  <div class="lang_choice">
+                    언어선택칸
+                  </div>
+                </li>
+              </ul><!-- navbar-nav me-auto-->
+            </div><!--collapse navbar-collapse-->
+          </div><!--container-fluid-->
+        </nav> <!--class navbar navber-expand-lg-->  
+  
+        <div class="under_nav">
+          <a href="#">뮤지컬</a>
+          <a href="#">콘서트</a>
+          <a href="#">스포츠</a>
+          <a href="#">전시/행사</a>
+          <a href="#">클래식/무용</a>
+          <a href="#">아동/가족</a>
+          <a href="#">연극</a>
+          <a href="#">레저/캠핑</a>
+          <a href="#">토핑</a>
+          <a href="#">MD샵</a>
+          |
+          <span class="purple">
+            <a href="#" >랭킹</a>
+            <a href="#" >오픈공지</a>
+            <a href="#" >지역별</a>
+            <a href="#" >공연장</a>
+            <i class="fa-solid fa-face-smile"></i>
+          </span>
+          
+        </div>
+        
+      </header>
+
+    <main class="detail-main">
+        <div class="detail-screen">
+            <div class="deatil-top-btn">
+            </div>
+            <div class=detail-title>
+                <div class="detail-title-btn">
+                    <button type="button" class="btn btn-secondary"
+                        data-bs-toggle="popover" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-popover"
+                        data-bs-title="좌석우위"
+                        data-bs-content="Art Park에서 가장 많은 좌석을 판매하고 있습니다 (단, 기획사 판매분, 공연장 자체 시스템 판매분 제외)">
+                        좌석우위
+                    </button>
+                    <button type="button" class="btn btn-secondary"
+                        data-bs-toggle="popover" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-popover"
+                        data-bs-title="원하는좌석이 없으신가요? 예매대기 서비스를 이용해보세요."
+                        data-bs-content="원하는 좌석이 없을 경우 희망 좌석을 선택하시면 해당 좌석 예매 취소 시, 먼저 예매할 수 있는 기회를 드리는 서비스입니다.">
+                        예매대기
+                    </button>
+
+                </div>
+                <h3>뮤지컬 <시카고></h3>
+                <span>뮤지컬 주간 1위</span>
+            </div>
+            <div class=detail-content>
+                <div class="detail-img">
+                    <img src="https://ticketimage.interpark.com/Play/image/large/24/24005266_p.gif">
+                    <div class="detail-img__play">
+                        <a href="#"><i class="fa-solid fa-play" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i></a>
+                    </div>
+                    <div class="detail-img__bottom">
+                        <div class="detail-img__bottom-heart">
+                            <i class="fa-solid fa-heart"></i>
+                            <span>티켓캐스트 <strong>6947</strong></span>
+                        </div>
+                        <div class="detail-img__bottom-sns">
+                            <div><a href=""><i class="fa-brands fa-facebook-f fa-xs"></i></a></div>
+                            <div><a href=""><i class="fa-brands fa-x-twitter fa-xs"></i></a></div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="detail-info">
+                    <ul class="info">
+                        <li class="infoItem">
+                            <span class="infoItem-label">장소</span>
+                            <div class="infoItem-content">
+                                <span>디큐브 링크아트센터</span>
+                                <a href="#"  data-bs-toggle="modal" data-bs-target="#staticBackdrop2"><i class="fa-solid fa-play fa-xs"></i></a> 
+                            </div>
+                        <li class="infoItem">
+                            <span class="infoItem-label">공연기간</span>
+                            <div class="infoItem-content">
+                                <span>2024.06.07 ~2024.09.29</span> 
+                            </div>
+                        </li>
+                        <li class="infoItem">
+                            <span class="infoItem-label">공연시간</span>
+                            <div class="infoItem-content">
+                                <span>145분(인터미션 20분 포함)</span> 
+                            </div>
+                        </li>
+                        <li class="infoItem">
+                            <span class="infoItem-label">관람연령</span>
+                            <div class="infoItem-content">
+                                <span>14세 이상 관람가</span> 
+                            </div>
+                        </li>
+                        <li class="infoItem">
+                            <span class="infoItem-label">가격</span>
+                            <div class="infoItem-content">
+                                <ul class="price-list">
+                                    <a href="#" class="price-list__title" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"><li>전체가격보기<i class="fa-solid fa-play fa-xs"></i></a>
+                                    </li>
+                                    <li class="price-list__price">
+                                        <span>VIP석</span>
+                                        <span>160,000원</span>
+                                    </li>
+                                    <li class="price-list__price">
+                                        <span>OP석</span>
+                                        <span>150,000원</span>
+                                    </li>
+                                    <li class="price-list__price">
+                                        <span>R석</span>
+                                        <span>140,000원</span>
+                                    </li>
+                                    <li class="price-list__price">
+                                        <span>S석</span>
+                                        <span>110,000원</span>
+                                    </li>
+                                    <li class="price-list__price">
+                                        <span>A석</span>
+                                        <span> 80,000원</span>
+                                    </li>
+                                </ul>    
+                        </li>
+                        <li class="infoItem">
+                            <span class="infoItem-label">혜택</span>
+                            <div class="infoItem-content">
+                                <div class="info-content__benefit">
+                                    <a href="#">무이자 할부  <i class="fa-solid fa-play fa-xs"></i></a>
+                                </div>
+                                <div class="info-content__benefit2">
+                                    <a href="#">NOL 카드로 최대 7만원 혜택받기</a>
+                                </div>
+                                <div class="info-content__benefit2">
+                                    <a href="#">회원 10% 할인! <i class="fa-solid fa-chevron-right fa-xs"></i></a>
+                                </div>
+                            </div>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+            <div class="detail-content__bottom">
+            <div class="bottom-menu">
+                <ul class="bottom-menu-list">
+                    <li>
+                        <a href="#">공연정보</a>
+                    </li>
+                    <li>
+                        <a href="#">캐스팅정보</a>
+                    </li>
+                    <li>
+                        <a href="#">판매정보</a>
+                    </li>
+                    <li>
+                        <a href="#">관람후기(999+)</a>
+                    </li>
+                    <li>
+                        <a href="#">기대평(999+)</a>
+                    </li>
+                    <li>
+                        <a href="#">Q&A(300)</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom-casting">
+                <div class="bottom-casting__title">
+                    <div class="bottom-casting__title-left">
+                        <span>캐스팅</span>
+                    </div>
+                    <div class="bottom-casting__title-btn">
+                        <button>캐스팅 일정조회</button>
+                    </div>
+                </div>
+                <div class="bottom-casting__imgs">
+                    <div class="bottom-casting__imgs-img">
+                        <img src="https://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/07/01/0400040701_3728_012639.gif"/>
+                        <div class="bottom-casting__imgs-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="bottom-casting__imgs-name">
+                            벨마 켈리
+                        </div>
+                        <div class="bottom-casting__imgs-actor">
+                            최정원
+                        </div>
+                    </div>
+                    <div class="bottom-casting__imgs-img">
+                        <img src="https://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/07/01/0400040701_3695_012605.640.gif"/>
+                        <div class="bottom-casting__imgs-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="bottom-casting__imgs-name">
+                            벨마 켈리
+                        </div>
+                        <div class="bottom-casting__imgs-actor">
+                            윤공주
+                        </div>
+                    </div>
+                    <div class="bottom-casting__imgs-img">
+                        <img src="https://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/07/01/0400040701_3738_013105.729.gif"/>
+                        <div class="bottom-casting__imgs-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="bottom-casting__imgs-name">
+                            벨마 켈리
+                        </div>
+                        <div class="bottom-casting__imgs-actor">
+                            정선아
+                        </div>
+                    </div>
+                    <div class="bottom-casting__imgs-img">
+                        <img src="https://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/07/01/0400040701_1301_012940.gif"/>
+                        <div class="bottom-casting__imgs-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="bottom-casting__imgs-name">
+                            록시 하트
+                        </div>
+                        <div class="bottom-casting__imgs-actor">
+                            아이비
+                        </div>
+                    </div>
+                    <div class="bottom-casting__imgs-img">
+                        <img src="https://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/11/08/0400041108_26672_02.838.gif"/>
+                        <div class="bottom-casting__imgs-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="bottom-casting__imgs-name">
+                            록시 하트
+                        </div>
+                        <div class="bottom-casting__imgs-actor">
+                            티파니 영
+                        </div>
+                    </div>
+                    <div class="bottom-casting__imgs-img">
+                        <img src="https://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/15/04/0400041504_37027_02.gif"/>
+                        <div class="bottom-casting__imgs-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="bottom-casting__imgs-name">
+                            록시 하트
+                        </div>
+                        <div class="bottom-casting__imgs-actor">
+                            민경아
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-casting__imgs">
+                    <div class="bottom-casting__imgs-img">
+                        <img src="https://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/07/01/0400040701_4019_011.jpg"/>
+                        <div class="bottom-casting__imgs-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="bottom-casting__imgs-name">
+                            벨마 플린
+                        </div>
+                        <div class="bottom-casting__imgs-actor">
+                            박건형
+                        </div>
+                    </div>
+                    <div class="bottom-casting__imgs-img">
+                        <img src="https://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/08/11/0400040811_11862_02831.gif"/>
+                        <div class="bottom-casting__imgs-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="bottom-casting__imgs-name">
+                            빌리 플린
+                        </div>
+                        <div class="bottom-casting__imgs-actor">
+                            최재림
+                        </div>
+                    </div>
+                    <div class="bottom-casting__imgs-img">
+                        <img src="https://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/07/01/0400040701_3746_01.955.gif"/>
+                        <div class="bottom-casting__imgs-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="bottom-casting__imgs-name">
+                            마마 모튼
+                        </div>
+                        <div class="bottom-casting__imgs-actor">
+                            김영주
+                        </div>
+                    </div>
+                    <div class="bottom-casting__imgs-img">
+                        <img src="https://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/07/01/0400040701_3730_01.jpg"/>
+                        <div class="bottom-casting__imgs-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="bottom-casting__imgs-name">
+                            마마 모튼
+                        </div>
+                        <div class="bottom-casting__imgs-actor">
+                            김경선
+                        </div>
+                    </div>
+                    <div class="bottom-casting__imgs-img">
+                        <img src="https://ticketimage.interpark.com/PlayDictionary/DATA/PlayDic/PlayDicUpload/040004/07/01/0400040701_4471_01.jpg"/>
+                        <div class="bottom-casting__imgs-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="bottom-casting__imgs-name">
+                            에이모스
+                        </div>
+                        <div class="bottom-casting__imgs-actor">
+                            차정현
+                        </div>
+                    </div>
+                    <div class="bottom-casting__imgs-img">
+                        <img src=""/>
+                        <div class="bottom-casting__imgs-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="bottom-casting__imgs-name">
+                            메리 선샤인
+                        </div>
+                        <div class="bottom-casting__imgs-actor">
+                            S.J.KIM
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            </div>
+
+    </div>
+        <div class="detail-sticky">
+            <div class="detail-sticky-box">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button date-title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                          관람일
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <div id="calendar">
+                                <div id="calendar-title">  2024. 06 </div>
+                                <ul class="cal-list">
+                                    <li>일</li>
+                                    <li>월</li>
+                                    <li>화</li>
+                                    <li>수</li>
+                                    <li>목</li>
+                                    <li>금</li>
+                                    <li>토</li>
+                                </ul>
+                                <ul class="cal-list cal-first-line">
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">1</button></li>
+                                </ul>
+                                <ul class="cal-list">
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">2</button></li>
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">3</button></li>
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">4</button></li>
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">5</button></li>
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">6</button></li>
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">7</button></li>
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">8</button></li>
+                                </ul>
+                                <ul class="cal-list">
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">9</button></li>
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">10</button></li>
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">11</button></li>
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">12</button></li>
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">13</button></li>
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">14</button></li>
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">15</button></li>
+                                </ul>
+                                <ul class="cal-list">
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">16</button></li>
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">17</button></li>
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">18</button></li>
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">19</button></li>
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">20</button></li>
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">21</button></li>
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">22</button></li>
+                                </ul>
+                                <ul class="cal-list">
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">23</button></li>
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">24</button></li>
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">25</button></li>
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">26</button></li>
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">27</button></li>
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">28</button></li>
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">29</button></li>
+                                </ul>
+                                <ul class="cal-list">
+                                    <li><button class="cal-btn" onclick="toggleActive(this)">30</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                          회차
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <span>회차</span>
+                            <div id="round">
+                                <button>1회 14:00</button>
+                            <button>2회 18:30</button>
+                            </div>
+                            <div class="seat-class">
+                                <div>
+                                    <span>VIP석</span>
+                                    <span> 0석</span>
+                                </div>
+                                <div>
+                                    <span>OP석</span>
+                                    <span> 0석</span>
+                                </div>
+                                <div>
+                                    <span>R석</span>
+                                    <span> 0석</span>
+                                </div>
+                                <div>
+                                    <span>S석</span>
+                                    <span> 0석</span>
+                                </div>
+                                <div>
+                                    <span>A석</span>
+                                    <span> 0석</span>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                          캐스팅
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            최정원, 티파니 영, 김경선, 차정현, S.J.KIM
+                        </div>
+                      </div>
+                    </div>
+                    <div class="detail-sticky-box__book-btn">
+                        <a href="#">예매하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">관련영상</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-size">
+            <iframe width="760" height="600" src="https://www.youtube.com/embed/36hshluncms?si=gA0MdEAF8ZHyH-Lm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable modal-size">
+      <div class="modal-content modal-size">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">공연장 정보</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-location-name">
+                <h2>디큐브 링크아트센터</h2>
+            </div>
+            <div class="modal-location-map">
+                <img src="https://simg.pstatic.net/static.map/v2/map/staticmap.bin?caller=smarteditor&markers=color%3A0x11cc73%7Csize%3Amid%7Cpos%3A126.8891862%2037.5086466%7CviewSizeRatio%3A0.7%7Ctype%3Ad&w=700&h=315&scale=2&dataversion=169.76"/>
+            </div>
+
+            <div class="modal-location-info">
+                <span>전화번호: 02)2211-3000</span>
+                <span>주소 : 서울시 구로구 경인로 662 7층</span>
+                <a>홈페이지 : http://www.d3art.co.kr </a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">관련영상</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-size">
+           가격 표시가 들어가야 합니다.
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal end-->
+
+    </main>
+    <script src="https://kit.fontawesome.com/18139cb573.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+
+<script>
+
+    const calbtn = document.querySelectorAll(".cal-btn");
+    
+    function toggleActive(button) {
+        // 모든 버튼의 active 클래스를 제거
+        calbtn.forEach(btn => btn.classList.remove('active'));
+        // 클릭된 버튼에 active 클래스 추가
+        button.classList.add('active');
+    }
+    
+     </script>
+</body>
+</html>
