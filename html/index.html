@@ -22,7 +22,29 @@
             <form class="d-flex" role="search">
               <input class="form-control me-1 text_c" type="search" aria-label="Search">
               <i class="fa-solid fa-magnifying-glass search-icon"></i>
-            </form> <!--검색창-->
+             </form> <!--검색창-->
+            
+        <!-- <input type="checkbox" id="modal">
+        <label for="modal" class="modal-btn">
+            <form class="d-flex" role="search">
+            <input class="form-control me-1 text_c" type="search" aria-label="Search">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          </form>
+        </label>
+        <div class="dialog">
+            <div class="tb">
+                <div class="inner">
+                    <div class="top">
+                        <div class="title">Memo</div>
+                        <label for="modal" class="close">&times;</label>
+                    </div>
+                    <div id="memo-list">
+                    </div>
+                    <input type="text" id="memo-input" placeholder="내용을 입력해주세요.">
+                    <button id="save-memo"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+        </div> -->
   
             <div class="collapse navbar-collapse login" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -39,10 +61,11 @@
                     <div class="translate-button" onclick="openTranslateWidget()"><i class="fa-solid fa-globe"></i></div>
                     <div id="google_translate_element"></div>
                 </li>
-              </ul><!-- navbar-nav me-auto-->
-            </div><!--collapse navbar-collapse-->
-          </div><!--container-fluid-->
-        </nav> <!--class navbar navber-expand-lg-->  
+                <!-- <i class="fa-solid fa-circle-half-stroke" id="map-btn"></i> -->
+              </ul>
+            </div>
+          </div>
+        </nav> 
   
         <div class="under_nav">
           <a href="#">뮤지컬</a>
@@ -333,7 +356,7 @@
     </div>
 
     <div>
-        <h1>ArtPark Play</h1>
+        <h1 id="artpark-title">ArtPark Play</h1>
     </div>
     <div>
         <div class="Play-btn">
@@ -346,61 +369,61 @@
             <button>연극</button>
         </div>
     </div>
-    <div class="gerne-total-list">  <!--요소를 감싸고 있는 가장 큰 div-->
+    <div class="artpark-play-list">  <!--요소를 감싸고 있는 가장 큰 div-->
         <!-- 이 밑은 왼쪽버튼 -->
-        <div class="gerne-list-btn gerne-screen-btn-left">
-            <button id="gerne-prevbtn"><i class="fa-solid fa-chevron-left fa-lg"></i></button>
+        <div class="play-list-btn play-list-btn-left">
+            <button id="play-list-prevbtn"><i class="fa-solid fa-chevron-left fa-lg"></i></button>
         </div>
       
-        <div class="card" >
-            <iframe width="320" height="175" src="https://www.youtube.com/embed/bYXPVkjxmLM?si=WLXMsF1RJ6gWWHpL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <div class="card-body">
-                <img src="https://ticketimage.interpark.com/Play/image/large/23/23016085_p.gif" alt="" width="52" height="66">
+        <div class="play-list" >
+            <iframe class="play-list-youtube" src="https://www.youtube.com/embed/bYXPVkjxmLM?si=WLXMsF1RJ6gWWHpL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="play-list-body">
+                <img src="https://ticketimage.interpark.com/Play/image/large/23/23016085_p.gif" alt="" class="play-list-bodyimg">
                 <span class="span_exp">10주년 맞은 최강 뮤직 페스티벌! 울트라 뮤직 페스티벌 코리아 2024</span>
             </div>
         </div>
-        <div class="card" >
-            <iframe width="320" height="175" src="https://www.youtube.com/embed/L6zxQPENYH4?si=0BlSKV9tGV3gYUUW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <div class="card-body">
-                <img src="https://ticketimage.interpark.com/Play/image/large/24/24005706_p.gif" alt="" width="52" height="66">
+        <div class="play-list" >
+            <iframe class="play-list-youtube" src="https://www.youtube.com/embed/L6zxQPENYH4?si=0BlSKV9tGV3gYUUW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="play-list-body">
+                <img src="https://ticketimage.interpark.com/Play/image/large/24/24005706_p.gif" alt="" class="play-list-bodyimg">
                 <span class="span_exp">[인픽!요즘공연] 전설적인 배우들이 총출동하는 연극 '햄릿' 출연진 인터뷰!</span>
             </div>
         </div>
-        <div class="card" >
-            <iframe width="320" height="175" src="https://www.youtube.com/embed/oQoo3ziXu08?si=nWUfRjClNR2rhVQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <div class="card-body">
-                <img src="https://ticketimage.interpark.com/Play/image/large/23/23017356_p.gif" alt="" width="52" height="66">
+        <div class="play-list" >
+            <iframe class="play-list-youtube" src="https://www.youtube.com/embed/oQoo3ziXu08?si=nWUfRjClNR2rhVQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="play-list-body">
+                <img src="https://ticketimage.interpark.com/Play/image/large/23/23017356_p.gif" alt="" class="play-list-bodyimg">
                 <span class="span_exp">대망의 무대! World DJ Festival 2024 스팟 영상</span>
             </div>
         </div>
 
-        <div class="card" >
-            <iframe width="320" height="175" src="https://www.youtube.com/embed/oQoo3ziXu08?si=nWUfRjClNR2rhVQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <div class="card-body">
-                <img src="https://ticketimage.interpark.com/Play/image/large/23/23011447_p.gif" alt="" width="52" height="66">
+        <div class="play-list" >
+            <iframe class="play-list-youtube" src="https://www.youtube.com/embed/oQoo3ziXu08?si=nWUfRjClNR2rhVQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="play-list-body">
+                <img src="https://ticketimage.interpark.com/Play/image/large/23/23011447_p.gif" alt="" class="play-list-bodyimg">
                 <span class="span_exp">'혜공 인 더 파크 어워즈'를 빛낸 작품 & 배우는? 하이라이트 장면 보기!</span>
             </div>
         </div>
 
-        <div class="card" >
-            <iframe width="320" height="175" src="https://www.youtube.com/embed/qVDR2KBIak8?si=QhsOZCult5_6mM4Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <div class="card-body">
-                <img src="https://ticketimage.interpark.com/Play/image/large/24/24006773_p.gif" alt="" width="52" height="66">
+        <div class="play-list" >
+            <iframe class="play-list-youtube" src="https://www.youtube.com/embed/qVDR2KBIak8?si=QhsOZCult5_6mM4Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="play-list-body">
+                <img src="https://ticketimage.interpark.com/Play/image/large/24/24006773_p.gif" alt="" class="play-list-bodyimg">
                 <span class="span_exp">'히사이시 조 영화음악 콘서트'에서 만날 수 있는 애니메이션 명곡들!</span>
             </div>
         </div>
-        <div class="card" >
-            <iframe width="320" height="175" src="https://www.youtube.com/embed/ospQ1Dnmog8?si=tLnrDch6WCv2c5qJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <div class="card-body">
-                <img src="https://ticketimage.interpark.com/Play/image/large/24/24006773_p.gif" alt="" width="52" height="66">
+        <div class="play-list" >
+            <iframe class="play-list-youtube" src="https://www.youtube.com/embed/ospQ1Dnmog8?si=tLnrDch6WCv2c5qJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="play-list-body">
+                <img src="https://ticketimage.interpark.com/Play/image/large/24/24006773_p.gif" alt="" class="play-list-bodyimg">
                 <span class="span_exp">'히사이시 조 영화음악 콘서트' 2024년 전국투어!</span>
             </div>
         </div>
      
         <!-- 새로운 요소를 추가하실때는 여기다 추가하시면됩니다 -->
         <!-- 밑에는 오른쪽버튼 -->
-        <div class="gerne-list-btn gerne-screen-btn-right">
-            <button id="gerne-nextbtn"><i class="fa-solid fa-chevron-right fa-lg"></i></button>
+        <div class="play-list-btn play-list-btn-right">
+            <button id="play-list-nextbtn"><i class="fa-solid fa-chevron-right fa-lg"></i></button>
         </div>
         </div>
     </div>
