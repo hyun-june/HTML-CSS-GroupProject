@@ -457,40 +457,103 @@ a:hover{
 /* Footer */
 
 footer{
-    font-size: 13px;
-    margin: 25px;
-    border-top: 1px solid rgb(208, 204, 204);
-    text-align: center;
-  }
+    background-color: black;
+}
 
-  .footer_first{
-    margin: 10px;
-    width: 100%;
-    /*margin-bottom: 20px;*/
-    padding: 10px;
-  }
+.footer_btn_1{
+    width: 324px;
+    height: 69px;
+    background-color: #2B2B2B;
+    color: #FFFFFF;
+}
+.footer_btn_2{
+    width: 324px;
+    height: 69px;
+    background-color: #2B2B2B;
+    color: #FFFFFF;
+}
+.footer_left_1{
+    margin-left: 80px;
+    margin-top: 50px;
+}
+.btn {
+    width: 322px;
+    height: 58px;
+    background-color: #000000;
+    color: white;
+    border-radius: 0px;
+}
+.dropdown-menu {
+    width: 322px;
+    height: 58px;
+    background-color: #000000; 
+}
+.dropdown-item{
+    color: white;
+}
+.footer_left_bottom{
+    margin-left: 80px;
+    margin-top: 20px;
+    display: flex;
 
-  .footer_first a{
-    color: black;
+}
+.footer_icon a{
+    margin-top: 10px;
+    margin-left: 22px;
+    padding: 9px;
+    color: #737373;
+    font-size: 30px;
     text-decoration: none;
-    margin: 10px; 
-  }
+}
+.footer_right{
+    float: right;
+    margin-left: 100px;
 
-  .footer_second{
-    text-align: left;
-  }
+}
+.p_first{
+    text-align: right;
+    color: #737373;
+}
+.p_second{
+    text-align: right;
+    margin-top:10px ;
+    color: #737373;
+}
+.footer_right_bottom a{
+    text-decoration: none;
+    color: #737373;
+    padding: 30px;
+}
+.btn-outline-success{
+    padding-right: 30px;
+    background-color: white;
+    color: #000000;
+}
 
-  .footer_third{
-    text-align: left;
-  }
+.form-control{
+    border-radius: 0px;
+}
 
-  .dropdown1{
-    font-size: 13px;
-  }
-  
-  .footer_icon{
-    width: 30px;
-    height: 30px;
+.d-flex button:hover{
+    background-color: #000000;
+    color: white;
+    border-color: #000000;
+}
+
+.footer_end{
+    color:#8585854D;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-main{
+    display: flex;
+    margin-top: 40px;
+}
+
+hr{
+    width: 100%;
+    border: 1px solid #343434;
 }
 
 /* Modal CSS */
