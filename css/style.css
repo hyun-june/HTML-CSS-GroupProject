@@ -354,65 +354,85 @@ a:hover{
 
 /* Review */
 
-.best-review__box{
-    width: 1200px;
+/* 추가 */
+@keyframes change_image{
+    0% {background: url("https://www.yeongnam.com/mnt/file/202308/2023081601000513400020721.jpg") no-repeat center; background-size: cover;}
+    25% {background: url("https://cdn.ardentnews.co.kr/news/photo/202401/2583_11513_52.jpg") no-repeat center; background-size: cover;}
+    50% {background: url("https://www.sisajournal.com/news/photo/202111/228155_137059_3814.jpg") no-repeat center; background-size: cover;}
+    75% {background: url("https://dimg.donga.com/wps/NEWS/IMAGE/2016/02/03/76284252.2.jpg") no-repeat center; background-size: cover;}
+    100% {background: url("https://dimg.donga.com/wps/NEWS/IMAGE/2023/03/29/118587483.2.jpg") no-repeat center; background-size: cover;}
+}
+.notice-video{position: relative; padding: 100px 0 0 600px;}
+.image-video__wrap{
+    position: absolute;
+    left: 0;
+    top: 100px;
+}
+.image-video__border{
+    width: 350px;
+    height: 600px;
+    border-top-left-radius: 250px;
+    border-top-right-radius: 250px;
+    overflow: hidden;
+}
+.image-video__play{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url("https://www.yeongnam.com/mnt/file/202308/2023081601000513400020721.jpg") no-repeat center;
+    background-size: cover;
+    animation: change_image 30s ease 1.5s infinite;
 }
 
-.text-center h2{
-    margin: 50px 0px;
+.notice__wrap ul{padding: 0;}
+.notice__wrap li{border-bottom: 1px solid #666; height: 60px;}
+.notice__wrap li a{
+    line-height: 60px;
+    text-decoration: none;
+    color: black;
+}
+.notice__wrap li a:hover{font-weight: bold;}
+.notice__title{
+    padding: 0 0 9px 0;
+    font-size: 77px;
+    font-style: italic;
 }
 
-.best-review__list{
-    padding: 0 0 150px 400px;
-}
+.best-review-background{
+    background-color: #232221;
+    width: 100%;
+} 
 
+/* 추가 */
+
+.best-review__box{width: 1200px;}
+.best-review__list{padding: 0 0 150px 400px;}
 .best-review__list ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 150px 0 0 0; /* 추가 */
 }
-
-.best-review__list ul li:nth-child(2n){
-    margin-top: 100px;
-}
-
-.no-dot{
-    list-style-type: none;
-}
-
-.review__img{
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, .08);
-}
-
-.review__card__body{
-    padding: 40px 20px;
-}
-
+.best-review__list ul li:nth-child(2n){margin-top: 100px;}
+.no-dot{list-style-type: none;}
+.review__img{box-shadow: 0 0 0 2px rgba(0, 0, 0, .08);}
+.review__card__body{padding: 40px 20px;}
 .card-front__title{
     font-size: 24px;
     line-height: 30px;
     letter-spacing: -1px;
 }
-
-.reviewer{
-    display: flex;
-}
-
-.reviewer__img{
-    border: 1px solid lightgray; border-radius: 50%;
-}
-
+.reviewer{display: flex;}
+.reviewer__img{border: 1px solid lightgray; border-radius: 50%;}
 .review__card{
     display: inline-grid;
     transition: transform 1.5s;
     transform: perspective(3000px) rotateY(0deg);
     transform-style: preserve-3d;
 }
-
 .review__card:hover{
     transform: perspective(3000px) rotateY(180deg);
 }
-
 .review__card > * {
     grid-area: 1 / 1 / 1 / 1;
     width: 350px;
@@ -421,38 +441,14 @@ a:hover{
     border-radius: 8px;
     backface-visibility: hidden;
 }
-
-.review__card-front{
-    background-color: white; border: 1px solid black;
-}
-
-.review__card-back{
-    background-color: white; border: 1px solid black; transform: rotateY(180deg);
-}
-
-.card-back__name{
-    font-size: 15px; color: #999;
-}
-
-.card-back__title{
-    font-weight: 700; font-size: 20px;
-}
-
-.reviewer__star{
-    color: #FDBA39;
-}
-
-.reviewer__point{
-    font-weight: 700; font-size: 15px;
-}
-
-.card-back__comment{
-    font-size: 15px;
-}
-
-.mr-10{
-    margin-right: 10px;
-}
+.review__card-front{ background-color: white; border: 1px solid black;}
+.review__card-back{ background-color: white; border: 1px solid black; transform: rotateY(180deg);}
+.card-back__name{font-size: 15px; color: #999;}
+.card-back__title{font-weight: 700; font-size: 20px;}
+.reviewer__star{color: #FDBA39;}
+.reviewer__point{font-weight: 700; font-size: 15px;}
+.card-back__comment{font-size: 15px;}
+.mr-10{margin-right: 10px;}
 
 /* Footer */
 
