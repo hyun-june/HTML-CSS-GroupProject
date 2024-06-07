@@ -1,0 +1,23 @@
+.cal-list {
+    display:flex;
+    justify-content:space-between;
+}
+
+.cal-list button {
+    border: none;
+    background-color: white;
+}
+
+.cal-first-line {
+    justify-content: flex-end;
+}
+
+
+#calendar ul {
+    padding:0px;
+}
+
+#calendar-title {
+    text-align: center;
+    margin-bottom: 10px;
+}

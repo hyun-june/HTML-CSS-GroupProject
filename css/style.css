@@ -1,6 +1,8 @@
-body{
-    margin: 0px;
-}
+@import "detail.css";
+@import "calendar.css";
+@import "modal.css";
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+
 
 /* HEADER */
 
@@ -21,6 +23,14 @@ body{
     margin: 20px;
     margin-left: 200px;
   }
+
+  .navbar-brand {
+    font-family: "Gaegu", sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+
+  }
+
 
   .navbar-nav{
     display: flex;
@@ -715,7 +725,54 @@ body.dark-mode #nav-img {
     }
   }
 
+  @keyframes change_image{
+    0% {background: url("https://www.yeongnam.com/mnt/file/202308/2023081601000513400020721.jpg") no-repeat center; background-size: cover;}
+    25% {background: url("https://cdn.ardentnews.co.kr/news/photo/202401/2583_11513_52.jpg") no-repeat center; background-size: cover;}
+    50% {background: url("https://www.sisajournal.com/news/photo/202111/228155_137059_3814.jpg") no-repeat center; background-size: cover;}
+    75% {background: url("https://dimg.donga.com/wps/NEWS/IMAGE/2016/02/03/76284252.2.jpg") no-repeat center; background-size: cover;}
+    100% {background: url("https://dimg.donga.com/wps/NEWS/IMAGE/2023/03/29/118587483.2.jpg") no-repeat center; background-size: cover;}
+}
+.notice-video{position: relative; padding: 100px 0 0 600px;}
+.image-videowrap{
+    position: absolute;
+    left: 0;
+    top: 100px;
+}
+.image-videoborder{
+    width: 350px;
+    height: 600px;
+    border-top-left-radius: 250px;
+    border-top-right-radius: 250px;
+    overflow: hidden;
+}
+.image-videoplay{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url("https://www.yeongnam.com/mnt/file/202308/2023081601000513400020721.jpg") no-repeat center;
+    background-size: cover;
+    animation: change_image 30s ease 1.5s infinite;
+}
 
+
+
+.noticewrap ul{padding: 0;}
+.noticewrap li{border-bottom: 1px solid #666; height: 60px;}
+.noticewrap li a{
+    line-height: 60px;
+    text-decoration: none;
+    color: black;
+}
+.noticewrap li a:hover{font-weight: bold;}
+.noticetitle{
+    padding: 0 0 9px 0;
+    font-size: 77px;
+    font-style: italic;
+}
+
+.best-review-background{
+    background-color: #232221;
+}
 
 
 
