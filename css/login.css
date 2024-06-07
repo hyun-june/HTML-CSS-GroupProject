@@ -7,10 +7,13 @@ body{
     font-style: normal;
 }
 
+.login-img{
+    padding: 0px;
+}
+
 .login-banner{
     overflow: hidden;
     padding: 0px;
-    background-image: url(/img/loginbanner.jpg);
     height: 100vh;
     background: url('/img/loginbanner.jpg') no-repeat center center;
     background-size: cover;
@@ -156,10 +159,6 @@ body{
     height: 40px;
 }
 
-
-
-
-
 .focus-back{
     position: relative;
     background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210913/pngtree-blue-spotlight-stage-for-performance-illustration-image_886914.jpg");
@@ -177,4 +176,5 @@ body{
                 left .1s;
     z-index: 10;
 }
+
 .login-text p{font-size: 20px;}
