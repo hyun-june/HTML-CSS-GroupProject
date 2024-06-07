@@ -1,6 +1,4 @@
-@import "header.css";
-@import "calendar.css";
-@import "modal.css";
+@import "/css/style.css";
 
 body {
     height: 1000vh;
@@ -332,4 +330,44 @@ detail-screen {
 .seat-class span:last-child {
     font-weight: 600;
     color:#696969;
+}
+
+/* Calendar */
+
+.cal-list {
+    display:flex;
+    justify-content:space-between;
+}
+
+.cal-list button {
+    border: none;
+    background-color: white;
+}
+
+.cal-first-line {
+    justify-content: flex-end;
+}
+
+#calendar ul {
+    padding:0px;
+}
+
+#calendar-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Modal */
+
+.modal-location-info span {
+    display:block;
+}
+
+.modal-location-map img {
+    width: 90%;
+}
+
+
+.modal-size {
+    height: 700px;
 }
