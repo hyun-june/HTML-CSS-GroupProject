@@ -346,7 +346,6 @@ a:hover{
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
-<<<<<<< HEAD
 
 .play-list-bodyimg{
     width: 52px;
@@ -464,8 +463,6 @@ footer{
     padding: 10px 0px;
 }
 
-=======
->>>>>>> 107ff78c979e23873aed06552c75e92e53106f4b
 .footer_btn_1{
     width: 324px;
     height: 69px;
@@ -482,9 +479,7 @@ footer{
     margin-left: 80px;
     margin-top: 50px;
 }
-<<<<<<< HEAD
 
-=======
 .btn {
     width: 322px;
     height: 58px;
@@ -492,7 +487,6 @@ footer{
     color: white;
     border-radius: 0px;
 }
->>>>>>> 107ff78c979e23873aed06552c75e92e53106f4b
 .dropdown-menu {
     width: 322px;
     height: 58px;
@@ -505,13 +499,10 @@ footer{
     margin-left: 80px;
     margin-top: 20px;
     display: flex;
-<<<<<<< HEAD
 }
 
-=======
     
-}
->>>>>>> 107ff78c979e23873aed06552c75e92e53106f4b
+
 .footer_icon a{
     margin-top: 10px;
     margin-left: 22px;
@@ -523,13 +514,8 @@ footer{
 .footer_right{
     float: right;
     margin-left: 100px;
-<<<<<<< HEAD
 }
 
-=======
-
-}
->>>>>>> 107ff78c979e23873aed06552c75e92e53106f4b
 .p_first{
     text-align: right;
     color: #737373;
@@ -549,7 +535,6 @@ footer{
     background-color: white;
     color: #000000;
 }
-<<<<<<< HEAD
 
 .footer-form{
     border-radius: 0px;
@@ -568,11 +553,6 @@ footer{
 }
 
 
-=======
-.form-control{
-    border-radius: 0px;
-}
->>>>>>> 107ff78c979e23873aed06552c75e92e53106f4b
 .d-flex button:hover{
     background-color: #000000;
     color: white;
@@ -584,7 +564,6 @@ footer{
     text-align: center;
     font-size: 14px;
 }
-<<<<<<< HEAD
 
 .footer-main{
     display: flex;
@@ -826,13 +805,3 @@ body.dark-mode #nav-img {
 
 
 
-=======
-.main{
-    display: flex;
-    margin-top: 40px;
-}
-hr{
-    width: 100%;
-    border: 1px solid #343434;
-}
->>>>>>> 107ff78c979e23873aed06552c75e92e53106f4b
