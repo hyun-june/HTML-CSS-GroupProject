@@ -1,7 +1,7 @@
 @import "detail.css";
 @import "calendar.css";
 @import "modal.css";
-
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
 
 
 /* HEADER */
@@ -23,6 +23,14 @@
     margin: 20px;
     margin-left: 200px;
   }
+
+  .navbar-brand {
+    font-family: "Gaegu", sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+
+  }
+
 
   .navbar-nav{
     display: flex;
