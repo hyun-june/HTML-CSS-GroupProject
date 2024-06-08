@@ -77,7 +77,7 @@ const playlistNext = () => {
         if (playindex > 0) {
             playlistprevbtn.style.display = 'block';
         }
-        if (playindex === playlist.length - 4) {
+        if (playindex === playlist.length - 3) {
             playlistnextbtn.style.display = 'none';
         }
     }
@@ -110,30 +110,18 @@ function openTranslateWidget() {
     }
 }
 
-// Modal
+// 로그인
 
-// const mapbtn = document.getElementById("map-btn");
-// const savememo = document.getElementById("save-memo");
-
-// const darkmode = () => {
-//     const body = document.body;
-//     body.classList.toggle("dark-mode");
-// }
-
-// mapbtn.addEventListener("click", darkmode);
-
-// const addmemo = () =>{
-//     const memoInput = document.getElementById("memo-input");
-//     const memoList = document.getElementById("memo-list");
-
-//     if(memoInput.value.trim() !==""){
-//         const memoDiv = document.createElement('div');
-//         memoDiv.className ='memo';
-//         memoDiv.textContent = memoInput.value;
-//         memoList.appendChild(memoDiv);
-//         memoInput.value ='';
-//     }
-// }
-
-// savememo.addEventListener("click", addmemo);
-
+document.addEventListener('DOMContentLoaded', function() {
+    const username = localStorage.getItem('userName');
+    
+    const userWelcomeMessage = document.getElementById('userWelcomeMessage');
+    const logintext = document.getElementById('login-signup');
+    const signuptext = document.getElementById('signup')
+    
+    if (username) {
+        logintext.textContent = `${username}님`;
+        logintext.href = "#";
+        signuptext.style.display = 'none';
+    }
+});
