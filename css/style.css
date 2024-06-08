@@ -163,6 +163,8 @@
     display: block;
 }
 
+.banner-slide-mini{display: none;}
+
 /* Gerne-List  */
 
 .gerne-title {
@@ -758,6 +760,34 @@ hr{
     background-color: #232221;
 }
 
+
+@media screen and (max-width:48rem){
+    .point1, .point2, .point3, .point4, .point5, .point6, .point7, .point8{display: none;}
+
+    .banner-slide{display: none;}
+    .banner-slide-mini{display: block;}
+
+    .image-video__wrap{display: none;}
+    
+    .notice-video{padding: 100px 0 0 0;}
+    .notice__title{font-size: 40px; text-align: center;}
+    .notice__wrap ul{text-align: center;}
+    .notice__wrap a{margin: 0;}
+    .notice__wrap span{display: none;}
+    
+    .best-review__box{width: 100%;}
+    .best-review__list{padding: 0;}
+    .best-review__list ul{padding: 0; flex-wrap: nowrap; flex-direction: column; text-align: center;}
+    .best-review__list ul li:nth-child(2n){margin: 20px 0;}
+   
+    .review__card{height: 460px;}
+    .review__card-front{height: 460px;}
+    .review__card-front .review__card__body{display: none;}
+    .review__card-back{height: 460px;}
+    .review__card-back .review__card__body{padding: 20px 10px;}
+    .card-back__name{font-size: 15px;}
+    .card-back__title{font-weight: 700; font-size: 18px;}
+}
 @media screen and (min-width:759px) {
     /*nav 수정*/
     .nav-item2{
