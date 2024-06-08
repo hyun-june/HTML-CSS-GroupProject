@@ -10,30 +10,33 @@
 <body>
     <div class="container-fluid text-center">
         <div class="row login-container">
-          <div class="col-9 login-img">
+          <div class="col-lg-9 login-img">
             <div class="focus-back">
               <div id="focus"></div>
             </div>
           </div>
-          <div class="col-3 login-section">
+          <div class="col-lg-3 login-section">
             <div class="login-box">
                 <div class="login-text">
                     <h3>ART PARK</h3>
                     <p>Welcome Back~</p>
                 </div>
                 <div>
+                  <form id="loginForm">
                     <div class="mb-3">
                         <span class="login-comment">아이디</span>
-                        <input type="text" class="form-control login-input" placeholder="아이디 입력">
+                        <input type="text" class="form-control login-input" id="userName" placeholder="아이디 입력">
                       </div>
+                      <p class="error error-id"> 아이디(이메일)을 입력해주세요 </p>
                       <div class="mb-3 login-inner">
                         <span class="login-comment">비밀번호</span>
-                        <input type="text" class="form-control login-input" placeholder="비밀번호 입력">
+                        <input type="password" class="form-control login-input" id="userPassword" placeholder="비밀번호 입력">
                       </div>
                       <div class="d-grid gap-2">
-                        <button class="btn login-btn" type="button">로그인</button>
+                        <button class="btn login-btn" type="button" id="loginButton">로그인</button>
                       </div>
                 </div>
+              </form>
                 <ul class="login-tag">
                     <li class="login-block"><a href="#" class="login-link">회원가입</a></li>
                     <li class="login-block"><a href="#" class="login-link">계정 정보 찾기</a></li>

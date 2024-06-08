@@ -81,3 +81,34 @@ function resetFocus() {
 function getScreenAvg() {
   return Math.floor((bodyEl.clientWidth + bodyEl.clientHeight) * 0.5)
 }
+
+
+// const id_Error = document.querySelector('.error-id')
+// const inputinput = document.querySelector('.login-input')
+
+// inputinput.addEventListener('click',function(){
+//   id_Error.style.display="block"
+// })
+
+document.addEventListener('keydown',function(event){
+  if(event.key === 'Enter'){
+      loginUser();
+  }
+})
+
+const loginUser = () =>{
+  let username = document.getElementById("userName").value;
+  let password = document.getElementById("userPassword").value;
+
+  if(username === '' || password === ''){
+    alert('아이디와 비밀번호를 입력하세요.');
+  } else{
+    alert( username + '님이 로그인 되었습니다.');
+    localStorage.setItem('userName',username);
+    window.location.href = 'index.html';
+  }
+}
+
+document.getElementById('loginButton').addEventListener('click', loginUser);
+document.getElementById('loginForm').addEventListener('submit',function(event)
+{event.preventDefault();});

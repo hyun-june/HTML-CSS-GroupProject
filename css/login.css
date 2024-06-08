@@ -11,15 +11,6 @@ body{
     padding: 0px;
 }
 
-.login-banner{
-    overflow: hidden;
-    padding: 0px;
-    height: 100vh;
-    background: url('/img/loginbanner.jpg') no-repeat center center;
-    background-size: cover;
-    caret-color: transparent;
-}
-
 .login-section{
     padding: 80px 40px;
 }
@@ -31,7 +22,6 @@ body{
 .login-text>p{
     margin: 0px;
 }
-
 
 .mb-3{
     margin-bottom: 0 !important;
@@ -167,14 +157,30 @@ body{
     overflow: hidden;
     padding: 0px;
 }
+
 #focus {
     position: absolute;
     width: 100%;
     height: 100%;
     background: #030303;
-    transition: top .1s,
-                left .1s;
+    transition: top .1s, left .1s;
     z-index: 10;
 }
 
 .login-text p{font-size: 20px;}
+
+.error{
+    color: #E7223D;
+    padding: 8px;
+    display: none;
+    margin-top:-18px;
+    /*안쳤을 때 오류났을 때만 나오게 */
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width:1400px) {
+    .login-img{
+        display: none;
+    }
+}
