@@ -26,10 +26,6 @@
     font-weight: 600;
   }
 
-  .navbar-brand:hover{
-    text-decoration: none;
-  }
-
   .navbar-nav{
     display: flex;
     align-items: center;
@@ -48,9 +44,14 @@
     font-weight: 300;
   }
 
-a:hover{
-    text-decoration: underline;
-  }
+.login a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.login a:hover {
+    color: #8E43E7 !important;
+}
 
 #google_translate_element {
     display: none;
@@ -574,121 +575,6 @@ hr{
     border: 1px solid #343434;
 }
 
-/* Modal CSS */
-
-/* #modal{
-    display:none;
-  }
-
-.modal-btn{
-    color: white; 
-    text-align: center;
-    font-size: 18px;
-    cursor: pointer; 
-    margin-right: 10px;
-  }
-
-.dialog {
-    display:none;
-    position: fixed;
-    right: 100px;
-    top: 10;
-    z-index: 10;
-  }
-  
-.dialog>.tb {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-  }
-  
-.dialog>.tb .inner {
-    width: 100%;
-    padding: 20px;
-    background: #fff;
-    border-radius: 16px;
-    background-color: #F2EDC0;
-  }
-  
-.dialog .top {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #000000de;
-    justify-content: space-between;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-  }
-  
-.dialog .title {
-    font-weight: bold;
-    font-size: 20px;
-    color: #000000de;
-  }
-  
-.dialog #memo-list {
-    height: 200px;
-    overflow-y: auto;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: #fff;
-    font-size: 16px;
-    text-align: left;
-    background-color: #F2EDC0;
-  }
-
-.inner {
-    max-width:400px;
-}
-  
-input[id="modal"]:checked + label + .dialog{
-      display: block;
-  }
-
-.close{
-    font-size:25px;
-    cursor:pointer;
-  }
-
-#memo-input{
-    width: 200px;
-    height: 30px;
-    border: none;
-    border-bottom: 1px solid #000000de;
-    padding-left: 10px;
-    background-color: #F2EDC0;
-}
-
-#save-memo{
-    font-size: 20px;
-    border: none;
-    background-color: white;
-    top: 2px;
-    position: relative;
-    background-color: #F2EDC0;
-}
-
-#save-memo .fa-plus{
-    color: #000000de;
-    cursor: pointer;
-} */
-
-/* darkmode CSS */
-
-.dark-mode{
-    background-color: #2e2e2e;
-    color: #ced4da;
-}
-
-body.dark-mode .nav-item {
-    color: #ced4da;
-}
-
-body.dark-mode #nav-img {
-    background-color: #999999;
-}
-
   @media screen and (max-width:48rem) {
   .footer_first a {
     text-align: left;
@@ -739,24 +625,24 @@ body.dark-mode #nav-img {
   }
 
   @keyframes change_image{
-    0% {background: url("https://www.yeongnam.com/mnt/file/202308/2023081601000513400020721.jpg") no-repeat center; background-size: cover;}
-    25% {background: url("https://cdn.ardentnews.co.kr/news/photo/202401/2583_11513_52.jpg") no-repeat center; background-size: cover;}
-    50% {background: url("https://www.sisajournal.com/news/photo/202111/228155_137059_3814.jpg") no-repeat center; background-size: cover;}
-    75% {background: url("https://dimg.donga.com/wps/NEWS/IMAGE/2016/02/03/76284252.2.jpg") no-repeat center; background-size: cover;}
-    100% {background: url("https://dimg.donga.com/wps/NEWS/IMAGE/2023/03/29/118587483.2.jpg") no-repeat center; background-size: cover;}
+    0% {background: url("https://ticketimage.interpark.com/Play/image/large/24/24008188_p.gif") no-repeat center; background-size: cover;}
+    25% {background: url("https://ticketimage.interpark.com/Play/image/large/24/24006581_p.gif") no-repeat center; background-size: cover;}
+    50% {background: url("http://ticketimage.interpark.com/TicketImage/notice_poster/20/2024052816291188.jpg") no-repeat center; background-size: cover;}
+    75% {background: url("http://ticketimage.interpark.com/TicketImage/notice_poster/20/20240603113126.jpg") no-repeat center; background-size: cover;}
+    100% {background: url("http://ticketimage.interpark.com/TicketImage/notice_poster/20/20240607014118.jpg") no-repeat center; background-size: cover;}
 }
 
 .notice-video{
     position: relative; padding: 100px 0 0 600px;
 }
 
-.image-videowrap{
+.image-video__wrap{
     position: absolute;
     left: 0;
     top: 100px;
 }
 
-.image-videoborder{
+.image-video__border{
     width: 350px;
     height: 600px;
     border-top-left-radius: 250px;
@@ -764,34 +650,34 @@ body.dark-mode #nav-img {
     overflow: hidden;
 }
 
-.image-videoplay{
+.image-video__play{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: url("https://www.yeongnam.com/mnt/file/202308/2023081601000513400020721.jpg") no-repeat center;
+    background: url("https://ticketimage.interpark.com/Play/image/large/24/24007166_p.gif") no-repeat center;
     background-size: cover;
     animation: change_image 30s ease 1.5s infinite;
 }
 
-.noticewrap ul{
+.notice__wrap ul{
     padding: 0;
 }
 
-.noticewrap li{
+.notice__wrap li{
     border-bottom: 1px solid #666; height: 60px;
 }
 
-.noticewrap li a{
+.notice__wrap li a{
     line-height: 60px;
     text-decoration: none;
     color: black;
 }
 
-.noticewrap li a:hover{
+.notice__wrap li a:hover{
     font-weight: bold;
 }
 
-.noticetitle{
+.notice__title{
     padding: 0 0 9px 0;
     font-size: 77px;
     font-style: italic;
