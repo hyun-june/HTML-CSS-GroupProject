@@ -769,4 +769,33 @@ hr{
     
 }
 
+@media (max-width:800px){
+    .gerne-btn {
+        display:block;
+        text-align: center;
+    }
+    .gerne-total-list {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .gerne-list-btn {
+        display:none;
+    }
+
+    .gerne-list {
+        margin-top: 30px;
+    }
+
+    .artpark-play-list {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .play-list-btn {
+        display: none;
+    }
+}
