@@ -4,4 +4,4 @@
 
 #### 역할 - 메인 배너 : 김지민님, navbar와footer : 박다은님, 장르별 랭킹 : 유용민님 , 로그인 페이지: 이현준님
 
-현준 - 1일차, 로그인 페이지 UI완성, 반응형 부분은 추후 수정할 예정
+#### figma https://www.figma.com/design/kKKnK3CrKqGMwHcRBXHIAL/Group-13?m=dev&node-id=0-1&t=fjNnWk7uClQWG7eF-1

@@ -76,6 +76,7 @@ body{
     font-size: 25px;
     display: flex;
     justify-content: center;
+    padding: 0px;
 }
 
 .login-link{
@@ -182,5 +183,9 @@ body{
 @media screen and (max-width:1400px) {
     .login-img{
         display: none;
+    }
+
+    .login-section{
+        width: 100%;
     }
 }

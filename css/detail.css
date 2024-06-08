@@ -61,7 +61,6 @@ detail-screen {
     z-index: 0;
     width: 300px;
     height: 400px;
-
 }
 
 .detail-img__play {
@@ -221,7 +220,6 @@ detail-screen {
     padding: 10px;
     font-size: 12px;
     border-radius: 5px;
-
 }
 
 .bottom-casting__imgs {
@@ -288,9 +286,6 @@ detail-screen {
     margin: 20px 0px;
 }
 
-
-
-
 .detail-sticky {
     width: 20rem;
     margin-top: 40px;
@@ -306,7 +301,6 @@ detail-screen {
     align-items: center;
 }
 
-
 .detail-sticky-box__book-btn {
     margin-top: 20px;
     border:1px solid black;
@@ -318,8 +312,18 @@ detail-screen {
     border-radius: 20px;
 }
 
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: #666666;
+}
+
 .accordion-header {
     width: 20rem;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+    transform: rotate(-180deg);
 }
 
 #round  {
@@ -333,12 +337,6 @@ detail-screen {
     border: 1px solid black;
     background-color: white;
     margin-top: 5px;
-}
-
-#round button:focus {
-    color: white;
-    background-color: #333333;
-    
 }
 
 .seat-class {
@@ -360,8 +358,8 @@ detail-screen {
 .detail-sticky-box__book-btn:hover {
     background-color: #333333;
     color: white;
-
 }
+
 /* Calendar */
 
 .cal-list {
@@ -397,9 +395,8 @@ detail-screen {
 }
 
 .cal-btn.active {
-    background-color: red;
+    background-color: #666666;
     color: #fff;
-    border-color: red;
 }
 
 /* Modal */
@@ -411,7 +408,6 @@ detail-screen {
 .modal-location-map img {
     width: 90%;
 }
-
 
 .modal-size {
     height: 700px;
@@ -432,7 +428,8 @@ detail-screen {
 }
 
 .time-btn.active{
-    color: lightpink;
+    color: white;
+    background-color: #666666 !important;
     border: 1px solid lightpink;
     font-weight: 500;
 }

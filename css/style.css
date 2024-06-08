@@ -1,6 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Poor+Story&family=Yeon+Sung&family=Jua&family=Nanum+Pen+Script&family=Gaegu&display=swap');
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* HEADER */
+
+body{
+    font-family: 'BMJUA';
+}
 
 .text_c{
     border-radius: 24px;
@@ -17,7 +34,6 @@
 
   .login{
     margin: 20px;
-    margin-left: 200px;
   }
 
   .navbar-brand {
@@ -32,7 +48,6 @@
   }
 
   .under_nav a{
-    font-family: "Open Sans", sans-serif;
     color:black;
     text-decoration: none;
     margin: 10px;
@@ -87,6 +102,10 @@
 .banner{
     position: relative;
     width: 100vw;
+}
+
+.banner__pointer{
+    margin-top: 1rem;
 }
 
 .carousel-item{
@@ -190,9 +209,9 @@
 }
 
 .gerne-btn button:focus {
-    background-color: #8E43E7;
+    background-color: #666666;
     color: white;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .gerne-list-btn {
@@ -212,10 +231,11 @@
 
 #gerne-prevbtn,#gerne-nextbtn{
     border: none;
-    background-color: aqua;
     border-radius: 50%;
     width: 50px;
     height: 50px;
+    background-color: hsla(0,0%,100%,.9);
+    box-shadow: 0 0 .8rem rgba(0, 0, 0, .13);
 }
 
 .gerne-total-list {
@@ -301,7 +321,7 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    width: 500px;
+    width: 400px;
     margin-top: 20px;
 }
 
@@ -326,7 +346,7 @@
 }
 
 .Play-btn button:focus {
-    background-color: #8E43E7;
+    background-color: #666666;
     color: white;
     font-weight: 600;
 }
@@ -344,7 +364,8 @@
 
 #play-list-prevbtn,#play-list-nextbtn{
     border: none;
-    background-color: aqua;
+    background-color: hsla(0,0%,100%,.9);
+    box-shadow: 0 0 .8rem rgba(0, 0, 0, .13);
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -435,6 +456,7 @@
 .review__img{box-shadow: 0 0 0 2px rgba(0, 0, 0, .08);}
 .review__card__body{padding: 40px 20px;}
 .card-front__title{
+    font-family: "Jua", sans-serif;
     font-size: 24px;
     line-height: 30px;
     letter-spacing: -1px;
@@ -460,11 +482,11 @@
 }
 .review__card-front{ background-color: white; border: 1px solid black;}
 .review__card-back{ background-color: white; border: 1px solid black; transform: rotateY(180deg);}
-.card-back__name{font-size: 15px; color: #999;}
-.card-back__title{font-weight: 700; font-size: 20px;}
+.card-back__name{font-size: 15px; color: #999; font-family: "Nanum Pen Script", cursive;}
+.card-back__title{font-weight: 700; font-size: 20px;  font-family: "Yeon Sung", system-ui;}
 .reviewer__star{color: #FDBA39;}
 .reviewer__point{font-weight: 700; font-size: 15px;}
-.card-back__comment{font-size: 15px;}
+.card-back__comment{font-size: 15px; font-family: 'omyu_pretty';}
 .mr-10{margin-right: 10px;}
 
 /* Footer */
@@ -624,7 +646,9 @@ hr{
     .review__card:hover{
         transform: perspective(800px) rotateY(180deg);
     }
+
     /*nav 수정*/
+    
     .under_nav{
         display: none;
     }
@@ -634,7 +658,9 @@ hr{
     .translate-button{
         display: none;
     }
+
     /*footer 수정*/
+
     .footer_mdqr{
         display: block;
         text-align: center;
@@ -687,6 +713,10 @@ hr{
     }
     .footer_right_bottom2 a:hover{
         text-decoration: underline;
+    }
+
+    .footer_right_bottom2{
+        padding-top: 10px;
     }
 
     .footer_end2 {
@@ -796,7 +826,6 @@ hr{
     .footer_mdqr{
         display: none;
     }
-    
 }
 
 @media (max-width:800px){
@@ -808,6 +837,15 @@ hr{
         display:flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+    }
+
+    .artpark-play-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 
     .gerne-list-btn {
@@ -817,15 +855,29 @@ hr{
     .gerne-list {
         margin-top: 30px;
     }
-
-    .artpark-play-list {
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
     .play-list-btn {
         display: none;
     }
+
+    .text_c {
+        border-radius: 24px;
+        width: 330px;
+        height: 40px;
+        padding-right: 40px;
+    }
+
+    .play-list-youtube{
+        width: 300px;
+        height: 175px;
+    }
+    
+    .play-list{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .banner__pointer{
+        margin-top: 0px;
+    }
 }
+
