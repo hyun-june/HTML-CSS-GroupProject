@@ -1,7 +1,6 @@
 @import "/css/style.css";
 
 body {
-    height: 1000vh;
 }
 
 li {
@@ -273,10 +272,31 @@ detail-screen {
     opacity: 0.8;
 }
 
+.about-performance {
+    margin-top: 60px;
+}
+
+.about-performance h3 {
+    font-weight: 600;
+}
+
+.about-performance__time {
+    display:flex;
+    flex-direction: column;
+
+}
+
+.about-performance__time span {
+    margin: 20px 0px;
+}
+
+
+
+
 .detail-sticky {
     width: 20rem;
     margin-top: 40px;
-    height: 1000vh;
+
     margin-left: 50px;
 }
 
@@ -287,6 +307,7 @@ detail-screen {
     flex-direction: column;
     align-items: center;
 }
+
 
 .detail-sticky-box__book-btn {
     margin-top: 20px;
@@ -316,6 +337,12 @@ detail-screen {
     margin-top: 5px;
 }
 
+#round button:focus {
+    color: white;
+    background-color: #333333;
+    
+}
+
 .seat-class {
     display:flex;
     margin-top: 10px;
@@ -332,6 +359,11 @@ detail-screen {
     color:#696969;
 }
 
+.detail-sticky-box__book-btn:hover {
+    background-color: #333333;
+    color: white;
+
+}
 /* Calendar */
 
 .cal-list {
