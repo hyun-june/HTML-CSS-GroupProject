@@ -21,36 +21,14 @@
             <form class="d-flex" role="search">
               <input class="form-control me-1 text_c" type="search" aria-label="Search">
               <i class="fa-solid fa-magnifying-glass search-icon"></i>
-             </form> <!--검색창-->
-            
-        <!-- <input type="checkbox" id="modal">
-        <label for="modal" class="modal-btn">
-            <form class="d-flex" role="search">
-            <input class="form-control me-1 text_c" type="search" aria-label="Search">
-            <i class="fa-solid fa-magnifying-glass search-icon"></i>
-          </form>
-        </label>
-        <div class="dialog">
-            <div class="tb">
-                <div class="inner">
-                    <div class="top">
-                        <div class="title">Memo</div>
-                        <label for="modal" class="close">&times;</label>
-                    </div>
-                    <div id="memo-list">
-                    </div>
-                    <input type="text" id="memo-input" placeholder="내용을 입력해주세요.">
-                    <button id="save-memo"><i class="fa-solid fa-plus"></i></button>
-                </div>
-            </div>
-        </div> -->
+             </form> 
   
             <div class="collapse navbar-collapse login" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="login.html">로그인</a>
+                <li class="nav-item" id="userWelcomeMessage">
+                  <a class="nav-link active" aria-current="page" href="login.html" id="login-signup">로그인</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" id="signup">
                   <a class="nav-link active" href="#">회원가입</a>
                 </li>
                 <li class="nav-item">
@@ -61,9 +39,30 @@
                     <div id="google_translate_element"></div>
                 </li>
                 <!-- <i class="fa-solid fa-circle-half-stroke" id="map-btn"></i> -->
+                <li class="nav-item2">
+                    <a class="nav-link active" href="#">뮤지컬</a>
+                </li>
+                <li class="nav-item2">
+                    <a class="nav-link active" href="#">콘서트</a>
+                </li>
+                <li class="nav-item2">
+                    <a class="nav-link active" href="#">스포츠</a>
+                </li>
+                <li class="nav-item2">
+                    <a class="nav-link active" href="#">전시/행사</a>
+                </li>
+                <li class="nav-item2">
+                    <a class="nav-link active" href="#">클래식/무용</a>
+                </li>
+                <li class="nav-item2">
+                    <a class="nav-link active" href="#">아동/가족</a>
+                </li>
+                <li class="nav-item2">
+                    <a class="nav-link active" href="#">연극</a>
+                </li> 
               </ul>
             </div>
-          </div>
+            </div>
         </nav> 
   
         <div class="under_nav">
@@ -389,7 +388,6 @@
         <div class="play-list-btn play-list-btn-left">
             <button id="play-list-prevbtn"><i class="fa-solid fa-chevron-left fa-lg"></i></button>
         </div>
-      
         <div class="play-list" >
             <iframe class="play-list-youtube" src="https://www.youtube.com/embed/bYXPVkjxmLM?si=WLXMsF1RJ6gWWHpL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <div class="play-list-body">
@@ -413,7 +411,7 @@
         </div>
 
         <div class="play-list" >
-            <iframe class="play-list-youtube" src="https://www.youtube.com/embed/oQoo3ziXu08?si=nWUfRjClNR2rhVQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="play-list-youtube" src="https://www.youtube.com/embed/AJ_-P0rfhVw?si=3KD-vimPvoFcZ_1u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <div class="play-list-body">
                 <img src="https://ticketimage.interpark.com/Play/image/large/23/23011447_p.gif" alt="" class="play-list-bodyimg">
                 <span class="span_exp">'혜공 인 더 파크 어워즈'를 빛낸 작품 & 배우는? 하이라이트 장면 보기!</span>
@@ -697,10 +695,49 @@
                 <br><p class="footer_end">Copyright &copy; 2024 ArtPark All right reserved.</p>
             </p> 
         </div>
+
+        <div class="footer_mdqr">
+            <div class="footer_left_mdqr">
+                <button class="footer_btn_mdqr_1">
+                    ArtPark디스커버리랩
+                </button>
+                <button class="footer_btn_mdqr_2">
+                    대관신청
+                </button>
+            </div>
+            <div class="footer_icon2">
+                <span>
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+    
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+    
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+    
+                    <a href="#">
+                        <i class="fa-solid fa-comment"></i>
+                    </a>
+                </span> 
+            </div>
+            <div class="footer_right_bottom2">
+                <a href="#">오시는 길</a> 
+                <a href="#">이용약관</a> 
+                <a href="#">개인정보처리방침</a>    
+            </div>
+            <p class="footer_end2">상호 : ArtPark, 대표번호 : 1234-5678, 사업장주소 : 서울특별시 강서구 도레미로 123(도레미동, ArtPark 서울), 대표자명:코알누 Tel 1234-5678(평일 월-금, 10:00am-6pm)
+                <br><p class="footer_end2">Copyright &copy; 2024 ArtPark All right reserved.</p>
+            </p>
+
+        </div>
     </footer>
-</body>
     <script src="https://kit.fontawesome.com/18139cb573.js" crossorigin="anonymous"></script>
     <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="/js/main.js"></script>
+</body>
 </html>
