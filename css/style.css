@@ -192,7 +192,7 @@
 .gerne-btn button:focus {
     background-color: #8E43E7;
     color: white;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .gerne-list-btn {
@@ -577,7 +577,7 @@ hr{
     border: 1px solid #343434;
 }
 
-@media screen and (max-width:48rem) {
+  @media screen and (max-width:48rem) {
   .footer_first a {
     text-align: left;
     font-size: 8px;
@@ -687,6 +687,10 @@ hr{
     }
     .footer_right_bottom2 a:hover{
         text-decoration: underline;
+    }
+
+    .footer_right_bottom2{
+        padding-top: 10px;
     }
 
     .footer_end2 {
