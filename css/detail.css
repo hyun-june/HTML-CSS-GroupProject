@@ -433,3 +433,46 @@ detail-screen {
     border: 1px solid lightpink;
     font-weight: 500;
 }
+
+@media screen and (max-width:800px) {
+    .detail-main {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detail-title {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detail-content {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detail-info {
+        margin-top: 30px;
+    }
+    
+    .detail-content__bottom {
+        display:none;
+    }
+
+    .about-performance__time {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-performance__announce img {
+        width: 100%;
+    }
+
+    .detail-sticky-box {
+        margin-right: 50px;
+        margin-bottom: 20px;
+    }
+}
