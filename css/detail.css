@@ -1,5 +1,15 @@
 @import "/css/style.css";
 
+.navbar-toggler{
+    position: relative;
+}
+
+.hamberger{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
 body {
 }
 
